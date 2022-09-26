@@ -18,12 +18,11 @@ git status
 
 
 
+## working dir >> staging area
+&nbsp; &nbsp; &nbsp;<img src="https://user-images.githubusercontent.com/61492320/192209027-cce0eb49-e005-415f-8f03-2fc5806015e6.png"  width="500" height="250"/> &nbsp;&nbsp; <img src="https://user-images.githubusercontent.com/61492320/192209399-709a984a-8ded-4d8b-84ef-d9fea668f445.png"  width="400" height="250"/>
 
 
-
-#### 2. git add </br>
-- txt 파일 생성
-
+#### 1. txt 파일 생성 </br>
 ``` echo hell world! > a.txt
 echo hell world! > b.txt
 echo hell world! > c.txt
@@ -34,6 +33,7 @@ git status
 
 </br>
 
+#### 2. git add </br>
 - staging area에 a.txt add
 ``` 
 git add a.txt
@@ -161,6 +161,8 @@ git diff --staged
 ``` 
 ![image](https://user-images.githubusercontent.com/61492320/192204334-21e8dd0b-2a57-44e0-afdc-9e8381726eca.png)
 
+</br>
+
 - vscode를 통한 diff 확인
 ``` 
 # 1. config 파일 수정하기
@@ -185,6 +187,27 @@ cat a.txt #파일 내 텍스트 출력해줌
 
 ** 질문할것
 - .gitignore 추가할 때 >> 로 하면 되는 거 맞는쥐 메모장에 텍스트 추가한 것처럼
+
+
+
+
+
+
+
+
+
+
+![image](https://user-images.githubusercontent.com/61492320/192209108-885b7075-93d6-4693-ae66-0ba71dfba725.png)
+
+![image](https://user-images.githubusercontent.com/61492320/192209178-f9931da2-0685-49ed-bab7-c5bae3a0cb66.png)
+
+
+
+![image](https://user-images.githubusercontent.com/61492320/192208919-ffd91b81-a07d-40af-8c35-d51e4814e6c6.png)
+
+
+![image](https://user-images.githubusercontent.com/61492320/192209235-c1bba5bc-b057-4179-9b2a-973e1cd457ed.png)
+
 
 참고 사이트 
 - https://jud00.tistory.com/entry/Git-gitignore-%ED%8C%8C%EC%9D%BC%EC%9D%80-%EB%AD%98%EA%B9%8C-%EA%B7%B8%EB%A6%AC%EA%B3%A0-%EC%96%B8%EC%A0%9C-%EC%82%AC%EC%9A%A9%ED%95%A0%EA%B9%8C
