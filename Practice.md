@@ -1,4 +1,9 @@
 ## Git 실습
+
+![image](https://user-images.githubusercontent.com/61492320/192205795-335f6160-ce77-4a0e-acf8-9c57254638a9.png)
+
+
+
 #### 1. 기본 세팅 </br>
 ```git config --global user.name
 git config --global user.name "Yeongbi"
@@ -9,6 +14,11 @@ git config --global core.autocrlf true
 rm -rf .git
 git status
 ``` 
+</br>
+
+
+
+
 
 
 #### 2. git add </br>
@@ -84,6 +94,8 @@ git add * : .gitignore파일에 있는 파일들도 stage로 올리는 것
 git add *# 해당 경로에 있는 파일들 모두가 staging area로 add 
 ``` 
 
+</br>
+
 #### 2. gitignore
 .gitignore파일: Git 버전 관리에서 제외할 목록을 지정하는 파일/ gitignor라는 파일 만들어서 무시할 파일들을 넣어줌, log css 등 특정 파일들, 특정 경로 지정해서 추가 가능
 
@@ -108,6 +120,7 @@ start .gitignore
 ``` 
 ![image](https://user-images.githubusercontent.com/61492320/192202564-4ae65be9-ffc0-49fc-ac37-4844f1cecd57.png)
 
+</br>
 
 ### 3. git status
 
@@ -124,10 +137,11 @@ git status -s #간단하게 보기
 
 ![image](https://user-images.githubusercontent.com/61492320/192203755-5a042816-11de-456e-812e-74460ba9cd5a.png)
 
+</br>
 
 ### 4. git diff
-diff: staged file과 working dir 파일간 차이 보기 / 어디가 수정됐는지, 어떤 파일이 수정됐는지
-
+diff: staged file과 working dir 파일간 차이 보기 / 어디가 수정됐는지, 어떤 파일이 수정됐는지</br>
+terminal 말고 
 
 ```
 git diff 
@@ -141,9 +155,26 @@ git diff
 
 
 ``` 
-git diff --staged
+git diff --staged 
+# status 와 같이 -h 옵션으로 원하는 diff만 보는 명령어 확인해서 사용가능
+
 ``` 
 ![image](https://user-images.githubusercontent.com/61492320/192204334-21e8dd0b-2a57-44e0-afdc-9e8381726eca.png)
+
+- vscode를 통한 diff 확인
+``` 
+# 1. config 파일 수정하기
+git config --global -e # git config 파일 수정하기 위해
+config 파일에 아래와 같이 추가
+``` 
+![image](https://user-images.githubusercontent.com/61492320/192205513-c0280ff4-9ea6-406a-9535-4f086df5daf0.png)
+
+
+``` 
+git difftool
+``` 
+![image](https://user-images.githubusercontent.com/61492320/192205436-1b9df909-55e2-46f6-b3ca-399f9d06b602.png)
+
 
 
 ### 기타 
@@ -158,3 +189,4 @@ cat a.txt #파일 내 텍스트 출력해줌
 참고 사이트 
 - https://jud00.tistory.com/entry/Git-gitignore-%ED%8C%8C%EC%9D%BC%EC%9D%80-%EB%AD%98%EA%B9%8C-%EA%B7%B8%EB%A6%AC%EA%B3%A0-%EC%96%B8%EC%A0%9C-%EC%82%AC%EC%9A%A9%ED%95%A0%EA%B9%8C
 - https://www.youtube.com/watch?v=Z9dvM7qgN9s
+- https://inpa.tistory.com/entry/GIT-%E2%9A%A1%EF%B8%8F-git-add-%F0%9F%86%9A-git-add-%EC%B0%A8%EC%9D%B4%EC%A0%90
